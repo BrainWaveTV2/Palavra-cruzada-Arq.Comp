@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f4f8;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #1f2a52;
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: #0d6efd;
+  font-size: 18px;
+  text-align: left;
+}
+
+.intro {
+  margin-top: 0;
+}
+
+/* botões e contador */
+.botoes {
+  margin: 15px 0;
+}
+
+button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+button:hover {
+  background-color: #0a58ca;
+}
+
+#contador {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+#mensagem {
+  font-weight: bold;
+  color: #198754;
+  min-height: 20px;
+}
+
+/* tabuleiro e pistas lado a lado */
+.jogo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* tabuleiro */
+#tabuleiro {
+  display: grid;
+  gap: 2px;
+}
+
+.celula {
+  position: relative;
+  width: 34px;
+  height: 34px;
+}
+
+.celula input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #1f2a52;
+  background-color: white;
+  padding: 0;
+}
+
+.celula span {
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  font-size: 9px;
+  color: #555;
+  pointer-events: none;
+}
+
+/* cores depois de conferir */
+.celula input.certa {
+  background-color: #b6f0c8;
+}
+
+.celula input.errada {
+  background-color: #f7b8b8;
+}
+
+/* pistas */
+.pistas {
+  width: 340px;
+  text-align: left;
+}
+
+.pistas ul {
+  padding-left: 20px;
+}
+
+.pistas li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.pistas li.certa {
+  color: #198754;
+  font-weight: bold;
+}
+
+.pistas li.errada {
+  color: #c62828;
+  font-weight: bold;
+}
